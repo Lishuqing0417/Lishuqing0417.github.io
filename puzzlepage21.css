@@ -1,0 +1,38 @@
+#style1{text-align: center;}
+h1#style1{
+    text-shadow: 4px 8px 8px #53727d;font-size: 30px;
+}
+p#style1{color:#000079;font-size: 20px;
+  font-weight: bold; margin:-10px;
+}
+
+#style2{text-align: center;font-weight: bold;font-size: 17px;
+    text-shadow: 4px 2px 8px #53727d;margin:5px;
+}
+
+div.music{
+  text-align: center;
+}
+
+div.bt{
+  text-align: center;
+}
+
+div.bt2{
+  text-align: center;
+}
+
+div.bt button{
+  background: #ADD8E6;
+  border-radius: 3px;
+  font-size: 20px;
+  color:black;
+  margin:3px;
+}
+
+div.bt2 button{
+  background: #ADD8E6;
+  border-radius: 3px;
+  font-size: 20px;
+  color:black;
+}
