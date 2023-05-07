@@ -1,0 +1,26 @@
+#style1{text-align: center;}
+h1#style1{
+    text-shadow: 4px 2px 8px #53727d;
+}
+p#style1{background-color:purple;color:white;font-size: 20px;
+  font-weight: bold; margin:-5px;
+}
+
+#style2{text-align: center;font-weight: bold;
+    text-shadow: 4px 2px 8px #53727d;
+}
+
+div.music{
+  text-align: center;
+}
+
+div.bt{
+  text-align: center;
+}
+
+div.bt button{
+  background: purple;
+  border-radius: 10px;
+  font-size: 20px;
+  color:white;
+}
