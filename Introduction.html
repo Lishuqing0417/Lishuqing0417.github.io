@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SQ's Color</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="myStylePage.css"> -->
+    <link rel="stylesheet" href="styleceshi.css">
+    <link rel="stylesheet" href="navigation.css" href="navigation.js">
+  </head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+
+<div id="theHomePage">
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="bar" style="background: none; opacity: 0.9;">
+      <div class="container-fluid" >
+        <div class="navigation" >
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="list active">
+              <a href="#open">
+                <span class="icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text">Home</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#writings">
+                <span class="icon">
+                  <ion-icon name="newspaper-outline"></ion-icon>
+                </span>
+                <span class="text">Writings</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#redapple">
+                <span class="icon">
+                  <ion-icon name="logo-apple"></ion-icon>
+                </span>
+                <span class="text">RedApple</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#redfaith">
+                <span class="icon">
+                  <ion-icon name="flag-outline"></ion-icon>
+                </span>
+                <span class="text">RedFaith</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#aboutMe">
+                <span class="icon">
+                  <ion-icon name="woman-outline"></ion-icon>
+                </span>
+                <span class="text">aboutMe</span>
+              </a>
+            </li>
+            <div class="indicator"></div>
+          </ul>
+        </div>
+
+        <script>
+          const list= document.querySelectorAll('.list');
+          function activeLink(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+          }
+          list.forEach((item) =>
+          item.addEventListener('click',activeLink));
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      </div>
+    </nav>
+</div>
+
+  <!-- 欢迎界面 -->
+  <div class="page1 vh-100 d-flex align-items-center" id="open">
+    <div class="container">
+      <div class="row">
+        <div class="col mx-auto text-center">
+          <h1> 什么是红色？</h1>
+          <h2> 红色也许是被太阳晒红的脸，是激动时哭红的眼眶，是丰收时的满山红苹果，</h2>
+          <h2> 也许是飘扬的五星红旗，是熠熠闪烁的党徽，是即将丈量祖国大地的每一步， </h2>
+          <h2> 它是一种积极向上的生活态度，是一种用不熄灭的人生信条，</h2>
+          <h2> 是能一种温暖且坚定的力量…… </h2>
+          <div style="text-align:center;" class="button">
+            <a href="#writings">
+              <button type="button" class="btn  btn-outline-danger">BEGIN</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 欢迎界面结束 -->
+
+
+
+  <!-- 电影信息页面 -->
+  <!-- 时间与空间 -->
+  <section id="writings" class="writings">
+    <div class="container">
+
+      <div class="row">
+        <div class="mx-auto text-center col-xl-12 col-sm-4">
+          <!-- <h4 class="text-primary">文字里的“红”</h4> -->
+          <!-- <h1>文字的颜色</h1> -->
+          <p class="line-2" class="col-sm-4 col-md-4 mx-auto text-center">小时候写字时，总是在完成作业
+长大后写字时，多是在表达自己</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-7">
+          <div class="card card-effect my-3">
+            <img src="img/benfu.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">关于成为亿分之一的奔赴</h5>
+              <p class="card-text">19岁的夏天，没有连绵的阴雨、嘈杂的噪音和恐怖的混乱，有的是少年迈入崭新阶段的欣喜，是耳边温暖的风、头顶明媚的太阳和日复一日的好天气……我参观了恢弘大气的天安门广场，走过了威严庄重的长安街，也终于能怀揣着激动的心情把那份酝酿多年的入党申请书递交给党，迈出了关于成为关于亿分之一的第一步……</p>
+              <a href="https://docs.qq.com/document/DSFRvUHVScmltc2Nz" class="btn btn-warning">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-7">
+          <div class="card card-effect my-3">
+            <img src="img/liangqianwanfenzhiyi.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">你好，两千万分之一</h5>
+              <p class="card-text">有人说：“北京，是一座没人看你的城市，你满身尘土，没人看你；晚上十一点加班回家，没人看你；在人行街道上崩溃痛哭，没人看你；在这里，不管你多落魄、多美好，都没人看你。虽然很多人都说北京是一个冷漠的城市，但这并不影响我们爱她，我们在这里跌跌撞撞，屁滚尿流，但依然会热烈地拥抱她。这座城市，因为无数年轻人的奋斗而生机勃勃，也因为和努力的伙伴并肩同行，与有荣焉。你拼了命奔跑的样子，也许狼狈，却最美。这座大城市里的每一个异乡人，这条路上，你们从来都不是孤军奋战的一个人。每一个异乡人，愿你生活温暖，日子总是明亮又闪光——</p>
+              <a href="https://docs.qq.com/document/DSFRvUHVScmltc2Nz" class="btn btn-warning">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-7">
+          <div class="card card-effect my-3">
+            <img src="img/renshijian.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">我家的人世间</h5>
+              <p class="card-text">这是我的爷爷，我想，大概人世间所有的爷爷都是这样，含蓄而温暖。我们生命交汇的光阴，恰是我的幼年、童年和青年，他的中年、老年和暮年，拼起来，便是我记忆里这个独特的人世间。我走过了无忧无虑的童年和欢喜炽热的青年，见证了他的几十年如一日的友情以及他和奶奶细水长流、把日子过成诗的爱情。
+影片里的人世间，复杂、真实而感动，我家的人世间，平淡、温暖而独特，我知道，不是哪一个人世间里，都有一个爷爷，像一颗星星，永远亮着光……
+</p>
+              <a href="https://docs.qq.com/document/DSGRBT0l4UEdHY2Jn" class="btn btn-warning">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 时间与空间结束 -->
+  <!-- 爱与反思 -->
+
+<!-- redapple -->
+
+
+  <!-- 诺兰简介页面 -->
+
+<div class="redapple" id="redapple">
+  <section class="row">
+    <div class="col-lg-6 col-img"></div>
+    <div class="col-lg-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <p class="line-2" class="col-sm-4 col-md-8 mx-auto text-center">苹果的红，是心里的乐</p>
+            <p class="line-0 lh-1">
+            吉县苹果凭借脆、香、甜的口感，红粉、光亮的外表以及极高的性价比闻名海内外，但目前吉县苹果原本主打的“批发签约”销售路线和无品牌销售的模式与数字化时代营销模式脱节，我们希望通过自己的所学，助力家乡苹果产业更上一层楼！下面是我们的核心方案：
+            </p>
+
+            <!-- <div class="feature d-flex">
+              <div class="iconbox me-3">
+                <i class='bx bx-atom'></i>
+              </div> -->
+              <!-- <div class="">
+                <h4>“认领一颗苹果树”创意营销方案</h4>
+                <p class="line-1 lh-1">“认领一棵苹果树“的活动，将在三月末至十一月初开展，通过提前线上征集参与者，按照卖家要求选苗，提前交付定金领养一棵自己心仪的苹果树。
+买家可以在线上通过监控设备观察到小树生长情况，查看代照养果农进行浇水、施肥（有专业人员指导）…… </p>
+              </div> -->
+            <!-- </div> -->
+
+            <div class="feature d-flex">
+              <div class="iconbox me-3">
+                <ion-icon name="heart-circle-outline"></ion-icon>
+              </div>
+              <div class="">
+                <h4>“Cookie百果礼盒”营销方案</h4>
+                <p class="line-1 lh-1">cookie百果礼盒通过类似“盲盒”的形式，让客户通过混吃试吃的方式，低成本探索不同的的苹果品类，找到最适合自己的那一种，其优质的包装和文化内涵也使其成为节日送礼的优选……</p>
+              </div>
+            </div>
+
+            <div class="feature d-flex">
+              <div class="iconbox me-3">
+                <ion-icon name="heart-circle-outline"></ion-icon>
+              </div>
+              <div class="">
+                <h4>“cookie数据库”建设方案</h4>
+                <p class="line-1 lh-1">结合当地“智慧果园”，打造“cookie数据库”，通过记录不同品种果树的生长周期、苹果口感、甜度、年产量等不同特征，方便后续消费者在认领苹果树的分辨和选择。
+同时cookie数据库将征得消费者允许后，储存消费者信息，分析整合消费者画像，建立产品销售消费者网络……</p>
+              </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- 诺兰简介页面末尾 -->
+
+  <section id="Introduction&more" class="part-2 py-0">
+    <div class="container ">
+
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center">
+          <!-- <h4 class="text-primary">LOVE&REFLECTION</h4>
+          <h1>Love and Reflection</h1> -->
+          <p class="line-2">Perhaps you are very curious now and want to learn more.
+   You can obtain the information you want by clicking below.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-7">
+          <div class="card card-effect my-3">
+            <img src="img/cehuashu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">项目计划书（2023-4-20）</h5>
+              <p class="card-text">这是一份截止到目前为止最为详细到项目计划书，包含很多部分的内容，相信你可以从中获取到你想要的细节.</p>
+              <a href="https://docs.qq.com/document/DSHV1UXhMV2hHREx1" class="btn btn-primary">Get more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-7">
+          <div class="card card-effect my-3">
+            <img src="img/ppt2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">项目展示PPT（2023-5-12）</h5>
+              <p class="card-text">这是一份视觉呈现较为有趣的演示文稿，里面有一些有趣的图片和更加精炼的文字，或许可以帮你了解我们.</p>
+              <a href="https://docs.qq.com/pdf/DSEhiR2tZcHhmTnFv" class="btn btn-primary">Get more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-7">
+          <div class="card card-effect my-3">
+            <img src="img/ppt1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">项目雏形展示（2022-7-3）</h5>
+              <p class="card-text">这是一年前第一版的项目雏形，它是所有想法的发源，在我看来，它是很简短但很有纪念意义的一部分.</p>
+              <a href="https://docs.qq.com/pdf/DSE1KV3lFRUJ4ckJZ" class="btn btn-primary">Get more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="row">
+    <div class="col-md-8 mx-auto text-center">
+      <!-- <h4 class="text-primary">LOVE&REFLECTION</h4>
+      <h1>Love and Reflection</h1> -->
+      <p class="line-5">一段自制的粗糙但有趣的Video</p>
+    </div>
+  </div>
+
+  <div class="RD">
+        <video width="500" height="500" controls="">
+          <source src="img/redapple.mp4" type="video/mp4">
+        </video>
+      </div>
+  </div>
+
+
+  <!-- 爱与反思结束 -->
+
+  <!--  -->
+<div id="redfaith" class="redfaith">
+
+  <div class="row">
+    <div class="mx-auto text-center col-xl-12 col-sm-4">
+      <!-- <h4 class="text-primary">文字里的“红”</h4> -->
+      <!-- <h1>文字的颜色</h1> -->
+      <p class="line-2" class="col-sm-4 col-md-4 mx-auto text-center">信仰的红，是最美的红</p>
+    </div>
+  </div>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner" class="col-md-8 mx-auto text-center">
+      <div class="carousel-item active">
+        <img src="img/tiananmen.png" class="d-block w-100" alt="…">
+      </div>
+      <div class="carousel-item">
+        <img src="img/rendaihui.png" class="d-block w-100" alt="…">
+      </div>
+      <div class="carousel-item">
+        <img src="img/hezhao.png" class="d-block w-100" alt="…">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="repreDetails container reveal active" style="padding-top:1rem">
+    <div class="row">
+      <div class="col-md-8 mx-auto text-center">
+        <p class="line-2">Understanding the Great Power of Thought.
+——Recommendation List</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-4 d-block">
+              <div class="wrapper zoom">
+                  <div class="profile" id="profile1">
+                      <div class="overlay">
+                          <div class="about d-flex flex-column">
+                              <h4>《马克思靠谱》</h4>
+                              <span class="p-3">马克思总是会让令人敬佩又羡慕，虽然书里马克思的大后半生都穷困潦倒，但是他的一生里，他收获了让人羡慕的爱情，让人向往的友情，让人景仰的事业，在最后实现了自己的梦想……</span>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 d-block">
+              <div class="wrapper zoom">
+                  <div class="profile" id="profile2">
+                      <div class="overlay">
+                          <div class="about d-flex flex-column">
+                              <h4>《习近平的七年知青岁月》</h4>
+                              <span class="p-3">苦难是献给青春最好的礼物，我们要勇敢地面对苦难，接受苦难，战胜苦难，在途中丰富自己，充盈自己，通过磨砺让自己的青春绽放最绚丽的光彩！</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 d-block">
+              <div class="wrapper zoom">
+                  <div class="profile" id="profile3">
+                      <div class="overlay">
+                          <div class="about d-flex flex-column">
+                              <h4>《中国人的精神》</h4>
+                              <span class="p-3">爱是仁爱、善良、同情、怜悯、宽恕。平静而受到庇护的心态能够让我们认清事物的生命，那就是充满想象力的理智，那就是中国人的精神！</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+
+
+
+      <div class="row" id="redfaith" style="padding-top:3rem">
+        <div class="col-12 mx-auto text-center">
+          <h4>Other literary works </h4>
+          <div class="heading-underline"></div>
+        </div>
+        <div class="row text-center mx-0">
+          <div class="col-lg-4">
+            <h4 >《红岩》</h4>
+            <div class="feature">
+              <div class="iconbox-1">
+                <ion-icon name="logo-tableau" style="padding-top:0.1rem"></ion-icon>
+              </div>
+            </div>
+            <p class="line-0" style="padding-top:2rem">说到这本书就不得不一下江姐这个人物了，该人物和事迹出自这本书，这部书可以说是教育了几代中国青年。</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h4>《青春之歌》</h4>
+            <div class="feature">
+              <div class="iconbox-1">
+                <ion-icon name="logo-electron" ></ion-icon>
+              </div>
+            </div>
+            <p class="line-0" style="padding-top:2rem">作家杨沫的著作，以学生运动为背景，用革命、爱情、理想谱写了这首飞扬的青春赞歌，也曾是一个时代的象征。</p>
+          </div>
+
+          <div class="col-lg-4">
+            <h4>《保卫延安》</h4>
+            <div class="feature">
+              <div class="iconbox-1">
+                <ion-icon name="logo-ionic" style="padding-top:0.1rem"></ion-icon>
+              </div>
+            </div>
+            <p class="line-0" style="padding-top:2rem">这部小说写的是解放战争中的延安保卫战，以一位连长的英雄事迹为核心，呈现了一幅人民战争的恢弘画卷。</p>
+          </div>
+
+        </div>
+      </div>
+  </div>
+  <!-- 简介页面末尾 -->
+
+  <!-- 非线性叙事 -->
+  <!-- 非线性叙事结束 -->
+
+  <!-- 基本信息页面结束 -->
+
+  <!-- 大家的话 -->
+<div class="aboutMe"id="aboutMe">
+  <!-- Card -->
+<div class= Card>
+  <div class="container-md" >
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+      <div class="rowli">
+        <div class="box">
+          <img src="img/1.jpg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Farmer's laugh</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/2.jpg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Farmer's Back</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/3.jpg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Hawthorn berries</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/4.jpg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">The Orchard</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/5.jpg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Sky and trees</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/6.jpg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Chic Corner</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/7.jpg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Old man's smile</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/8.jpg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Pepper Tree</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/9.jpeg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Riverside night view</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/10.jpeg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Morning Glory</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/11.jpeg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">A different cloud</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/12.jpeg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Evening Sunset</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/13.jpeg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">A cup of coffee</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/14.jpeg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Green plants and lights</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rowli">
+        <div class="box">
+          <img src="img/15.jpeg" alt="" width="350px" height="230px">
+          <div class="box-content">
+            <div class="content">
+              <span class="post">Shooting</span>
+              <h3 class="title">Forestry</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+  <div class="aboutMe1" id="aboutMe1">
+    <div class="col-12 mx-auto text-center" >
+      <h1 class="heading pt-5" >关于我</h1>
+      <div class="heading-underline"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xl-6 clients">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/me1.jpeg" alt="">
+          </div>
+          <div class="col-md-8">
+            <blockquote>
+              Hello, I'm Sophia, from Communication University of China, Class of 2021, majoring in advertising digital marketing direction, I believe you have seen it in the front, I think of myself as red, it represents a positive, enthusiastic attitude to life, and a fiery red belief in life, welcome you to communicate with me about your color ~
+              <hr class="hr">
+              <i class='bx bxs-quote-left'></i>
+              There are ten thousand colors in the world, but there is only one me.
+              <hr class="hr">
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 clients">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="img/me2.jpeg" alt="">
+          </div>
+          <div class="col-md-8">
+            <blockquote>
+            Would you now think that I am a serious person, but this is only one aspect of me, outside of that, there is a me who is not limited, who likes to travel and write, who likes many, many beautiful things, who likes not to be defined, who likes to explore freely ......
+              <hr class="hr">
+              <i class='bx bxs-quote-left'></i>
+              We all have a primary color in our lives, but it should be colorful and unsettled!
+              <hr class="hr">
+              <cite>Welcome to be friends with me！</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 大家的话结束 -->
+  <!-- 最后的脚注 -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h4>I'm honored and happy that you're reading this, and I hope you have a wonderful day!!! If you have questions about any of the issues on the page, please feel free to contact me ~</h4>
+          </div>
+          <div class="col-md-1">
+
+          </div>
+          <div class="col-md-3">
+            <h4>Contact me</h4>
+            <ul class="list-unstyled">
+              <li>Name: SQ</li>
+              <li>Tel: 13653483006</li>
+              <li>Email: 2906074295@q.com</li>
+              <li>Wechat: L13653483006</li>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h4>Special Acknowledgements</h4>
+            <ul class="list-unstyled">
+              <li>Shiriey Tang</li>
+              <li>HTML、CSS、Bootstrap</li>
+              <li>My Time</li>
+            </ul>
+          </div>
+
+
+      </div>
+
+    </div>
+  </footer>
+  <!-- 脚注的结尾 -->
+    </body>
+  </html>
+
+
+
+
+
+<!-- RedApple page -->
+<!-- <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p> <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div> -->
+
+
+<!-- RedFaith page -->
+<!-- <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p> <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div> -->
+
+
+<!-- About Me page -->
