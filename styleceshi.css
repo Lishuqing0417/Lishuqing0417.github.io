@@ -6,7 +6,7 @@ article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, s
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
 
-
+/* 封面 */
 body{
   position: relative;
   overflow-x: hidden;
@@ -40,7 +40,7 @@ p{
 }
 
 
-/* hover待解决 */
+
 .nav-link:hover {
   color:#a39c83 !important;
 }
@@ -53,7 +53,7 @@ p{
 
 /* 登录页面 */
 .page1{
-  background-image: url(img/redAndWhite.png);
+  background-image: url(redAndWhite.png);
   background-position: center;
   background-size:1500px 690px;
   background-attachment: fixed;
@@ -61,28 +61,8 @@ p{
   z-index: 1;
 }
 
-/* .page1::after{
-  content:"";
-  position: absolute;
-  width: 100%;
-  height:100%;
-  top:0;
-  left: 0;
-  z-index: -1;
-} */
-
-/* .display-1{
-  font-size: 3rem;
-}
-
-.display-2,
-.display-3 {
-  font-size: 1.8rem;
-} */
-/* 登录页面结束 */
 
 
-/* 大师页面 */
 .feature{
   display: flex;
   justify-content: center;
@@ -120,7 +100,7 @@ h1.heading{
 }
 
 .offset {
-  background-image: url(img/actor.png);
+  background-image: url(actor.png);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -132,9 +112,8 @@ h1.heading{
   background-color:black;
   color: #c9d1d4;
 }
-/* 大师页面结束 */
 
-/* 时间与空间页面 */
+/* 文字作品 */
 .writings{
   background-color: #A52A2A;
 }
@@ -188,14 +167,14 @@ section .btn:hover{
   background-color: #FFC0CB;
 }
 
-/* 时间与空间结束 */
-/* 诺兰介绍 */
+
+/* 红色苹果 */
 .redapple{
   background-color: #A52A2A;
   /* padding-bottom: 60px; */
 }
 .col-img{
-  background-image: url(img/farmer1.JPG);
+  background-image: url(farmer1.JPG);
   top:70px;
   max-height: 100px;
   max-width: 1200px;
@@ -245,17 +224,14 @@ h4{
     margin-top: -6rem;
     /* padding-bottom: 10px */
 }
-/* 诺兰介绍 */
 
 
-/* 爱与反思 */
+
+/* 红色信仰 */
 .redfaith{
   background-color: #A52A2A;
   padding-top: 140px;
 }
-/* .media-body{
-  background-size: 64px 64px;
-} */
 
 .wrapper{
     display: flex;
@@ -268,7 +244,7 @@ h4{
 #profile1{
     /* position: relative; */
     width: 350px;height: 350px;
-    background:url("img/makesi.png");
+    background:url("makesi.png");
     background-size: cover;
     cursor: pointer;
     border: 12px;
@@ -278,7 +254,7 @@ h4{
 #profile2{
     /* position: relative; */
     width: 350px;height: 350px;
-    background:url("img/xishuji.png");
+    background:url("xishuji.png");
     background-size: cover;
     cursor: pointer;
     border: 12px;
@@ -288,7 +264,7 @@ h4{
 #profile3{
     /* position: relative;s */
     width: 350px;height: 350px;
-    background:url("img/danghui.png");
+    background:url("danghui.png");
     background-size: cover;
     cursor: pointer;
     border: 12px;
@@ -368,9 +344,7 @@ h4{
   }
 
 
-/* 爱与反思结束 */
-
-/* 大家的话 */
+/* 自我介绍 */
 .clients img{
   width: 100%;
   border-radius: 50%;
@@ -390,7 +364,7 @@ blockquote {
   margin: auto auto;
   text-align:center;
 }
-/* 大家的话结束 */
+
 
 /* 脚注 */
 .footer-top{
